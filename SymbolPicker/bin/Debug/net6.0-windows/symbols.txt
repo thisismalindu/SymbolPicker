@@ -8,3 +8,5 @@ gamma
 γ
 delta
 δ
+pi
+π

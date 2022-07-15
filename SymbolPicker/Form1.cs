@@ -71,9 +71,9 @@ namespace SymbolPicker
         {
             if (e.KeyCode == Keys.Escape)
             {
-                this.Hide();
-                notifyIcon.Visible = true;
-                
+                //this.Hide();
+                //notifyIcon.Visible = true;
+                Close();
 
             }
             else if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Space)
@@ -86,9 +86,9 @@ namespace SymbolPicker
         {
 
             Clipboard.SetText(((Button)sender).Text);
-            this.Hide();
-            notifyIcon.Visible = true;
-
+            //this.Hide();
+            //notifyIcon.Visible = true;
+            Close();
 
         }
 
@@ -96,9 +96,9 @@ namespace SymbolPicker
         {
             if (e.KeyCode == Keys.Escape)
             {
-                this.Hide();
-                notifyIcon.Visible = true;
-
+                //this.Hide();
+                //notifyIcon.Visible = true;
+                Close();
             }
         }
 
@@ -109,19 +109,20 @@ namespace SymbolPicker
 
         }
 
-        private void notifyIcon_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            Show();
-            WindowState = FormWindowState.Normal;
-            notifyIcon.Visible = false;
-        }
+        //private void notifyIcon_MouseDoubleClick(object sender, MouseEventArgs e)
+        //{
+        //    Show();
+        //    WindowState = FormWindowState.Normal;
+        //    notifyIcon.Visible = false;
+        //}
 
         private void textBox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
             {
-                this.Hide();
-                notifyIcon.Visible = true;
+                //this.Hide();
+                //notifyIcon.Visible = true;
+                Close();
 
             }
             else if (e.KeyCode == Keys.Down)
