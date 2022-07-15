@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SymbolPicker</id>
+    <version>1.0.0</version>
+    <authors>SymbolPicker</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+    <contentFiles>
+      <files include="any/net6.0-windows7.0/icons8_alpha.ico" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\thisismalindu\source\repos\SymbolPicker\SymbolPicker\bin\Release\net6.0-windows\SymbolPicker.runtimeconfig.json" target="lib\net6.0-windows7.0\SymbolPicker.runtimeconfig.json" />
+    <file src="C:\Users\thisismalindu\source\repos\SymbolPicker\SymbolPicker\bin\Release\net6.0-windows\SymbolPicker.dll" target="lib\net6.0-windows7.0\SymbolPicker.dll" />
+    <file src="C:\Users\thisismalindu\source\repos\SymbolPicker\SymbolPicker\icons8_alpha.ico" target="content\icons8_alpha.ico" />
+    <file src="C:\Users\thisismalindu\source\repos\SymbolPicker\SymbolPicker\icons8_alpha.ico" target="contentFiles\any\net6.0-windows7.0\icons8_alpha.ico" />
+  </files>
+</package>
