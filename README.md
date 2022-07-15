@@ -1,4 +1,0 @@
-"# SymbolPicker" 
-"# SymbolPicker" 
-"# SymbolPicker" 
-"# SymbolPicker" 
