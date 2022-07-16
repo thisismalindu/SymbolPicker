@@ -46,7 +46,7 @@ namespace SymbolPicker
 
             for (int i = 0; i < symbols.Count; i++)
             {
-                if (symbols[i].name.StartsWith(searchString))
+                if (symbols[i].name.Contains(searchString))
                 {
                     Button button = new Button();
                     button.Font = new System.Drawing.Font("Segoe UI Variable Display", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
