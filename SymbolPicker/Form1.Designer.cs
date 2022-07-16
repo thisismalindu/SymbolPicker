@@ -33,6 +33,7 @@
             this.textBox = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // textBox
@@ -80,5 +81,6 @@
         private TextBox textBox;
         private FlowLayoutPanel flowLayoutPanel;
         private NotifyIcon notifyIcon;
+        private ToolTip toolTip;
     }
 }

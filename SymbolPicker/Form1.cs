@@ -55,6 +55,8 @@ namespace SymbolPicker
                     button.KeyDown += Button_KeyDown;
                     button.Click += Button_Click;
                     button.Tag = i;
+                    toolTip.SetToolTip(button, symbols[i].name);
+
                     flowLayoutPanel.Controls.Add(button);
 
                 }
@@ -79,6 +81,10 @@ namespace SymbolPicker
             else if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Space)
             {
                 Copy(sender);
+            }
+            else if (e.Control && e.KeyCode == Keys.E)
+            {
+                textBox.Focus();
             }
         }
 
