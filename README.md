@@ -1,7 +1,7 @@
 # SymbolPicker
 A Simple Symbol Picker app like the Windows Emoji Picker to search and copy symbols to the clipboard.
 
-![image](https://user-images.githubusercontent.com/39488765/179278609-4557ac66-cb2c-4ed7-a91d-8c13f9b5c9cd.png)
+![image](https://user-images.githubusercontent.com/39488765/179365262-4d0a583f-026c-407b-8c9b-d2912a5dd7d1.png)
 
 
 It's basically a simple Symbol Picker like the Windows Emoji Picker. You can search for Symbols and then copy them to your clipboard.
