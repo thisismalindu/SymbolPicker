@@ -14,5 +14,6 @@ There is a text file (symbols.txt) where you can add your own symbols as unicode
 
 To launch the app with a keyboard shortcut, right click on the exe and then Send to->Desktop(Create Shortcut)
 Now go to the properties of the shortcut and set the shortcut key you want.
+
 ![image](https://user-images.githubusercontent.com/39488765/179338656-2ae639e2-bff5-4f99-8bf3-36f20d939600.png)
 
