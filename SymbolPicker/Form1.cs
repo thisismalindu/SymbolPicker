@@ -104,8 +104,8 @@ namespace SymbolPicker
 
         private void textBox_TextChanged(object sender, EventArgs e)
         {
-            flowLayoutPanel.Controls.Clear();
-            LayoutItems(textBox.Text);
+            //flowLayoutPanel.Controls.Clear();
+            //LayoutItems(textBox.Text);
 
         }
 
@@ -124,6 +124,11 @@ namespace SymbolPicker
                 //notifyIcon.Visible = true;
                 Close();
 
+            }
+            else if (e.KeyCode == Keys.Enter)
+            {
+                flowLayoutPanel.Controls.Clear();
+                LayoutItems(textBox.Text);
             }
             else if (e.KeyCode == Keys.Down)
             {
