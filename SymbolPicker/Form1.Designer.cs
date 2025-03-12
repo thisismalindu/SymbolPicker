@@ -28,59 +28,97 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.textBox = new System.Windows.Forms.TextBox();
-            this.flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
-            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.SuspendLayout();
+            textBox_search = new TextBox();
+            flowLayoutPanel_all = new FlowLayoutPanel();
+            textBox_opt = new TextBox();
+            label_loading = new Label();
+            flowLayoutPanel_recent = new FlowLayoutPanel();
+            SuspendLayout();
             // 
-            // textBox
+            // textBox_search
             // 
-            this.textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox.Location = new System.Drawing.Point(12, 16);
-            this.textBox.Name = "textBox";
-            this.textBox.Size = new System.Drawing.Size(368, 27);
-            this.textBox.TabIndex = 0;
-            this.textBox.TextChanged += new System.EventHandler(this.textBox_TextChanged);
-            this.textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_KeyDown);
+            textBox_search.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            textBox_search.Location = new Point(4, 4);
+            textBox_search.Name = "textBox_search";
+            textBox_search.Size = new Size(247, 23);
+            textBox_search.TabIndex = 0;
+            textBox_search.TextChanged += textBox_search_TextChanged;
+            textBox_search.Enter += textBox_search_Enter;
+            textBox_search.KeyDown += textBox_KeyDown;
+            textBox_search.Leave += textBox_search_Leave;
             // 
-            // flowLayoutPanel
+            // flowLayoutPanel_all
             // 
-            this.flowLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel.AutoScroll = true;
-            this.flowLayoutPanel.Location = new System.Drawing.Point(12, 56);
-            this.flowLayoutPanel.Name = "flowLayoutPanel";
-            this.flowLayoutPanel.Size = new System.Drawing.Size(368, 442);
-            this.flowLayoutPanel.TabIndex = 1;
+            flowLayoutPanel_all.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            flowLayoutPanel_all.AutoScroll = true;
+            flowLayoutPanel_all.Location = new Point(4, 152);
+            flowLayoutPanel_all.Name = "flowLayoutPanel_all";
+            flowLayoutPanel_all.Size = new Size(247, 125);
+            flowLayoutPanel_all.TabIndex = 1;
+            // 
+            // textBox_opt
+            // 
+            textBox_opt.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBox_opt.Location = new Point(4, 283);
+            textBox_opt.Name = "textBox_opt";
+            textBox_opt.Size = new Size(247, 23);
+            textBox_opt.TabIndex = 2;
+            // 
+            // label_loading
+            // 
+            label_loading.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label_loading.BackColor = SystemColors.AppWorkspace;
+            label_loading.Location = new Point(91, 204);
+            label_loading.Margin = new Padding(0);
+            label_loading.Name = "label_loading";
+            label_loading.Size = new Size(63, 20);
+            label_loading.TabIndex = 1;
+            label_loading.Text = "Loading";
+            label_loading.TextAlign = ContentAlignment.MiddleCenter;
+            label_loading.Visible = false;
+            // 
+            // flowLayoutPanel_recent
+            // 
+            flowLayoutPanel_recent.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            flowLayoutPanel_recent.AutoScroll = true;
+            flowLayoutPanel_recent.Location = new Point(4, 33);
+            flowLayoutPanel_recent.Name = "flowLayoutPanel_recent";
+            flowLayoutPanel_recent.Size = new Size(247, 113);
+            flowLayoutPanel_recent.TabIndex = 2;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(390, 512);
-            this.Controls.Add(this.flowLayoutPanel);
-            this.Controls.Add(this.textBox);
-            this.Font = new System.Drawing.Font("Segoe UI Variable Display", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Symbol Picker";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 16F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(254, 311);
+            Controls.Add(flowLayoutPanel_recent);
+            Controls.Add(label_loading);
+            Controls.Add(textBox_opt);
+            Controls.Add(flowLayoutPanel_all);
+            Controls.Add(textBox_search);
+            Font = new Font("Segoe UI Variable Display", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "Form1";
+            Opacity = 0.9D;
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Symbol Picker";
+            TopMost = true;
+            FormClosing += Form1_FormClosing;
+            Load += Form1_Load;
+            KeyDown += Form1_KeyDown;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-        private TextBox textBox;
-        private FlowLayoutPanel flowLayoutPanel;
-        private NotifyIcon notifyIcon;
-        private ToolTip toolTip;
+        private TextBox textBox_search;
+        private FlowLayoutPanel flowLayoutPanel_all;
+        private TextBox textBox_opt;
+        private Label label_loading;
+        private FlowLayoutPanel flowLayoutPanel_recent;
     }
 }
