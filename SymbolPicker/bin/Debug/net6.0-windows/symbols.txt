@@ -12,7 +12,7 @@ pi
 π
 theta
 θ
-almost equal to
+almost equal to similar
 ≈
 angle
 ∠
@@ -64,9 +64,9 @@ combining tilde
 𝐱̃
 combining x above
 𝐱̽
-contour integral
+contour integral surface
 ∮
-dagger
+dagger sword
 †
 does not divide
 ∤
@@ -134,7 +134,7 @@ greek capital letter delta
 δ
 greek capital letter gamma
 γ
-greek capital letter lamda
+greek capital letter lamda lambda
 λ
 greek capital letter omega
 ω
@@ -170,7 +170,7 @@ greek small letter iota
 ι
 greek small letter kappa
 κ
-greek small letter lamda
+greek small letter lamda lambda
 λ
 greek small letter mu
 μ
@@ -184,7 +184,7 @@ greek small letter pi
 π
 greek small letter psi
 ψ
-greek small letter rho
+greek small letter rho rou
 ρ
 greek small letter sigma
 σ
@@ -290,7 +290,7 @@ mathematical bold capital k
 𝐊
 mathematical bold capital l
 𝐋
-mathematical bold capital lamda
+mathematical bold capital lamda lambda
 𝚲
 mathematical bold capital m
 𝐌
@@ -366,7 +366,7 @@ mathematical bold italic capital k
 𝑲
 mathematical bold italic capital l
 𝑳
-mathematical bold italic capital lamda
+mathematical bold italic capital lamda lambda
 𝜦
 mathematical bold italic capital m
 𝑴
@@ -460,7 +460,7 @@ mathematical bold italic small kappa
 𝜿
 mathematical bold italic small l
 𝒍
-mathematical bold italic small lamda
+mathematical bold italic small lamda lambda
 𝝀
 mathematical bold italic small m
 𝒎
@@ -484,7 +484,7 @@ mathematical bold italic small q
 𝒒
 mathematical bold italic small r
 𝒓
-mathematical bold italic small rho
+mathematical bold italic small rho rou
 𝝆
 mathematical bold italic small s
 𝒔
@@ -660,7 +660,7 @@ mathematical bold small kappa
 𝛋
 mathematical bold small l
 𝐥
-mathematical bold small lamda
+mathematical bold small lamda lambda
 𝛌
 mathematical bold small m
 𝐦
@@ -684,7 +684,7 @@ mathematical bold small q
 𝐪
 mathematical bold small r
 𝐫
-mathematical bold small rho
+mathematical bold small rho rou
 𝛒
 mathematical bold small s
 𝐬
@@ -832,7 +832,7 @@ mathematical italic capital k
 𝐾
 mathematical italic capital l
 𝐿
-mathematical italic capital lamda
+mathematical italic capital lamda lambda
 𝛬
 mathematical italic capital m
 𝑀
@@ -924,7 +924,7 @@ mathematical italic small kappa
 𝜅
 mathematical italic small l
 𝑙
-mathematical italic small lamda
+mathematical italic small lamda lambda
 𝜆
 mathematical italic small m
 𝑚
@@ -948,7 +948,7 @@ mathematical italic small q
 𝑞
 mathematical italic small r
 𝑟
-mathematical italic small rho
+mathematical italic small rho rou
 𝜌
 mathematical italic small s
 𝑠

@@ -121,7 +121,6 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
-            MinimizeBox = false;
             Name = "Form1";
             Opacity = 0.9D;
             StartPosition = FormStartPosition.CenterScreen;

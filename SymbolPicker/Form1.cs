@@ -54,6 +54,7 @@ namespace SymbolPicker
             LoadRecentButtons();
 
             AlwaysTopMost();
+            HotKey.API_RegisterHotKey(this.Handle, (int)Keys.B, HotKey.control.Windows, Keys.B);
 
 
             TestInit();
@@ -405,6 +406,64 @@ namespace SymbolPicker
             SetNoActivate(this.Handle);
             this.Hide();
             this.Show(); //cancle activate
+        }
+        #endregion
+
+
+        #region hotkey
+        public static class HotKey
+        {
+            [DllImport("user32")]
+            private static extern bool RegisterHotKey(IntPtr hWnd, int id, uint control, Keys vk);
+
+            //解除注册热键的api
+            [DllImport("user32")]
+            private static extern bool UnregisterHotKey(IntPtr hWnd, int id);
+
+            public static bool API_RegisterHotKey(IntPtr hWnd, int id, control control, Keys vk)
+            {
+                return RegisterHotKey(hWnd, id, (uint)control, vk);
+            }
+            public static bool API_UnregisterHotKey(IntPtr hWnd, int id)
+            {
+                return UnregisterHotKey(hWnd, id);
+            }
+            public enum control : uint
+            {
+                None = 0,
+                Alt = 1,
+                Ctrl = 2,
+                Shift = 4,
+                Windows = 8
+            }
+        }
+
+
+        protected override void WndProc(ref Message m) //重写窗口消息
+        {
+            switch (m.Msg)
+            {
+                case 0x0312: //hotkey
+                    switch ((int)m.WParam)
+                    {
+                        case (int)Keys.B: //Win+B
+                            if(this.WindowState == FormWindowState.Minimized)
+                            {
+                                this.WindowState = FormWindowState.Normal;
+                                textBox_search.Focus();
+                            }
+                            else
+                            {
+                                textBox_opt.Focus(); //取消search的Focus（让窗口失去焦点，因为Focus那里用了个事件，如果没有了焦点就设置本窗口无焦点）
+                                this.WindowState = FormWindowState.Minimized;
+                            }
+                            textBox_search.Focus();
+                        break;
+                    }
+
+                    break;
+            }
+            base.WndProc(ref m);
         }
         #endregion
 
