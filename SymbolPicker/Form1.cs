@@ -9,29 +9,20 @@ namespace SymbolPicker
 {
     public partial class Form1 : Form
     {
-        private static List<Symbol> symbols = new List<Symbol>();
-        private static List<Button> symbolButtons = new List<Button>();
-        private static string path = Application.StartupPath + @"\symbols.txt";
+        private static List<Symbol> allSymbols = new List<Symbol>();
+        private static List<Button> allSymbolButtons = new List<Button>();
+
+        private static List<Symbol> recentSymbols = new List<Symbol>();
+        private static List<Button> recentSymbolButtons = new List<Button>();
+
+
+        private static string allPath = Application.StartupPath + @"\symbols.txt";
+        private static string recentPath = Application.StartupPath + @"\recent.txt";
         private static Font templateFont = new Font("Segoe UI Variable Display", 14F, FontStyle.Regular, GraphicsUnit.Point);
         private static Size templateSize = new System.Drawing.Size(30, 30);
 
 
-        #region init / end
-
-        public Form1()
-        {
-            InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            LoadButtons();
-            AlwaysTopMost();
-
-
-
-            TestInit();
-        }
+        #region test
         private void TestInit()
         {
             //Console.WriteLine(11);
@@ -41,16 +32,48 @@ namespace SymbolPicker
             //Console.WriteLine(11);
             //MessageBox.Show("1111");
             //Trace.WriteLine("WTF WHY IT WILL NOT CONSOLE WRITELINE ONLY IN THIS PROJECT");
-            Console.WriteLine("Fine, you win vs2022, I felt nasty");
+            //Console.WriteLine("Oh wait, Im idiot im on release mode");
 
 
             //Trace.WriteLine(KeyboardSimulator.SimulateKeyboard(0, KeyEventFlags.UNICODE, '我', true, 0));
             //Trace.WriteLine(KeyboardSimulator.SimulateKeyboard(0, KeyEventFlags.KEYUP));
         }
 
+        #endregion
 
-        private void LoadButtons()
+        #region init
+
+        public Form1()
         {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            LoadAllButtons();
+            LoadRecentButtons();
+
+            AlwaysTopMost();
+
+
+            TestInit();
+        }
+
+        private Button CreateOneButton(string tag, string txt)
+        {
+            Button button = new Button();
+            button.Font = templateFont;
+            button.Size = templateSize;
+            button.Click += Button_Click;
+            button.Tag = tag;
+
+            button.Text = txt;
+
+            return button;
+        }
+        private void LoadButtons(string path, List<Symbol> lssym, List<Button> lsbtn, FlowLayoutPanel layout, string tag)
+        {
+            if (!File.Exists(path)) return; //可能是 【最近使用】 还没添加
             try
             {
                 string[] linesFromTextFile = File.ReadAllLines(path);
@@ -60,32 +83,43 @@ namespace SymbolPicker
                     string img = linesFromTextFile[i + 1]; //gets the second line in the section
 
                     Symbol symbol = new Symbol(name, img);
-                    symbols.Add(symbol);
+                    lssym.Add(symbol);
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            for (int i = 0; i < symbols.Count; i++)
+
+            for (int i = 0; i < lssym.Count; i++)
             {
-                {
-                    //Button没法Clone
-                    Button button = new Button();
-                    button.Font = templateFont;
-                    button.Size = templateSize;
-                    button.Click += Button_Click;
-                    button.Tag = i;
+                Button button = CreateOneButton(tag, lssym[i].img);
+                lsbtn.Add(button);
+            }
 
-                    button.Text = symbols[i].img;
+            AddButtonsToLayout(lsbtn, layout);
 
-                    flowLayoutPanel_all.Controls.Add(button);
-
-                    symbolButtons.Add(button);
-                }
-
+        }
+        private void AddButtonsToLayout(List<Button> lsbtn, FlowLayoutPanel layout)
+        {
+            layout.Controls.Clear();
+            for (int i = 0; i < lsbtn.Count; i++)
+            {
+                //Button没法Clone
+                layout.Controls.Add(lsbtn[i]);
             }
         }
+        private void LoadAllButtons()
+        {
+            LoadButtons(allPath, allSymbols, allSymbolButtons, flowLayoutPanel_all, "all");
+        }
+
+        private void LoadRecentButtons()
+        {
+            LoadButtons(recentPath, recentSymbols, recentSymbolButtons, flowLayoutPanel_recent, "recent");
+        }
+
+
         private void AlwaysTopMost()
         {
             Task.Run(() =>
@@ -101,19 +135,93 @@ namespace SymbolPicker
                 }
             });
         }
+        #endregion
 
+        #region end
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
+            SaveRecent();
             Environment.Exit(0); //because the thread in AlwaysTopMost
         }
+        public static void SaveRecent()
+        {
+            string txt = "";
+            foreach (Symbol symbol in recentSymbols)
+            {
+                txt += symbol.name + "\n" + symbol.img + "\n";
+            }
+            try
+            {
+                File.WriteAllText(recentPath, txt);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Can not save recent symbols: " + ex.Message, "Error: ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
 
         #endregion
 
         #region handleOutput
+        private const int RECENTKEEPCOUNT = 24;
+
         private void Button_Click(object? sender, EventArgs e)
         {
             SetNoActivate(this.Handle);
             ShownAndInputToTextbox((Button)sender);
+            textBox_search.Text = "";
+
+            #region recent
+
+            #region symbols
+            Symbol removeS = recentSymbols.FirstOrDefault(x => x.img == ((Button)sender).Text);
+            if (removeS != null)
+            {
+                recentSymbols.Remove(removeS);
+            }
+
+            Symbol addS = allSymbols.FirstOrDefault(x => x.img == ((Button)sender).Text);
+            if (addS != null)
+            {
+                recentSymbols.Insert(0, addS);
+            }
+            else
+            {
+                MessageBox.Show("Can not add symbol to recent!");
+            }
+
+            if (recentSymbols.Count > RECENTKEEPCOUNT)
+            {
+                recentSymbols.RemoveAt(recentSymbols.Count - 1);
+            }
+            #endregion
+            #region button
+
+            Button recentBtn = recentSymbolButtons.FirstOrDefault(x => x.Text == ((Button)sender).Text);
+            if (recentBtn != null)
+            {
+                recentSymbolButtons.Remove(recentBtn);
+                recentSymbolButtons.Insert(0, recentBtn);
+            }
+            else
+            {
+                Button btn = CreateOneButton("recent", addS.img);
+                recentSymbolButtons.Insert(0, btn);
+            }
+
+            if (recentSymbolButtons.Count > RECENTKEEPCOUNT)
+            {
+                recentSymbolButtons.RemoveAt(recentSymbolButtons.Count - 1);
+                //MessageBox.Show(recentSymbolButtons.Count + "");
+            }
+
+            AddButtonsToLayout(recentSymbolButtons, flowLayoutPanel_recent);
+
+            #endregion
+
+            #endregion
+
         }
 
         private void ShownAndInputToTextbox(Button sender)
@@ -149,6 +257,7 @@ namespace SymbolPicker
 
         #endregion
 
+
         #region handle input
 
         public void FilterButtons(string text)
@@ -161,24 +270,24 @@ namespace SymbolPicker
 
             if (string.IsNullOrEmpty(text)) //更快
             {
-                for (int i = 0; i < symbols.Count; i++)
+                for (int i = 0; i < allSymbols.Count; i++)
                 {
-                    symbolButtons[i].Visible = true;
+                    allSymbolButtons[i].Visible = true;
                 }
             }
             else
             {
                 //Stopwatch sw = Stopwatch.StartNew();
 
-                for (int i = 0; i < symbols.Count; i++)
+                for (int i = 0; i < allSymbols.Count; i++)
                 {
-                    if (symbols[i].name.Contains(text))
+                    if (allSymbols[i].name.Contains(text))
                     {
-                        symbolButtons[i].Visible = true;
+                        allSymbolButtons[i].Visible = true;
                     }
                     else
                     {
-                        symbolButtons[i].Visible = false;
+                        allSymbolButtons[i].Visible = false;
                     }
                 }
                 //sw.Stop();
@@ -270,7 +379,7 @@ namespace SymbolPicker
         }
         private void textBox_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Enter || e.KeyCode == Keys.Escape)
+            if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Escape)
             {
                 textBox_opt.Focus();
             }
