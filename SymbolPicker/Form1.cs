@@ -54,7 +54,10 @@ namespace SymbolPicker
             LoadRecentButtons();
 
             AlwaysTopMost();
-            HotKey.API_RegisterHotKey(this.Handle, (int)Keys.B, HotKey.control.Windows, Keys.B);
+            if(!HotKey.API_RegisterHotKey(this.Handle, (int)Keys.B, HotKey.control.Ctrl, Keys.B))
+            {
+                MessageBox.Show("Can not reg hot key!");
+            }
 
 
             TestInit();
@@ -142,6 +145,7 @@ namespace SymbolPicker
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             SaveRecent();
+            HotKey.API_UnregisterHotKey(this.Handle, (int)Keys.B);
             Environment.Exit(0); //because the thread in AlwaysTopMost
         }
         public static void SaveRecent()
