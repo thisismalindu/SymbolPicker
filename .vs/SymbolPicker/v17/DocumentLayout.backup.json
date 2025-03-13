@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{54460062-6FC5-4FD8-A069-F2B3FE18F7B7}|SymbolPicker\\SymbolPicker.csproj|solutionrelative:symbolpicker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54460062-6FC5-4FD8-A069-F2B3FE18F7B7}|SymbolPicker\\SymbolPicker.csproj|c:\\c#sourcecode\\symbolpicker-fork\\symbolpicker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{54460062-6FC5-4FD8-A069-F2B3FE18F7B7}|SymbolPicker\\SymbolPicker.csproj|C:\\C#sourceCode\\SymbolPicker-fork\\symbolpicker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{54460062-6FC5-4FD8-A069-F2B3FE18F7B7}|SymbolPicker\\SymbolPicker.csproj|solutionrelative:symbolpicker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -27,6 +27,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\C#sourceCode\\SymbolPicker-fork\\SymbolPicker\\Form1.cs",
+              "RelativeDocumentMoniker": "SymbolPicker\\Form1.cs",
+              "ToolTip": "C:\\C#sourceCode\\SymbolPicker-fork\\SymbolPicker\\Form1.cs",
+              "RelativeToolTip": "SymbolPicker\\Form1.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAADwvysAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T23:07:16.379Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -39,19 +52,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-12T01:58:57.24Z",
               "EditorCaption": " [\u8BBE\u8BA1]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\C#sourceCode\\SymbolPicker-fork\\SymbolPicker\\Form1.cs",
-              "RelativeDocumentMoniker": "SymbolPicker\\Form1.cs",
-              "ToolTip": "C:\\C#sourceCode\\SymbolPicker-fork\\SymbolPicker\\Form1.cs",
-              "RelativeToolTip": "SymbolPicker\\Form1.cs",
-              "ViewState": "AgIAAJ0BAAAAAAAAAAAAAMEBAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T23:07:16.379Z",
-              "EditorCaption": ""
             }
           ]
         },

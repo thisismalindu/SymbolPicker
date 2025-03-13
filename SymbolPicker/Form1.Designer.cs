@@ -43,7 +43,7 @@
             textBox_search.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textBox_search.Location = new Point(4, 4);
             textBox_search.Name = "textBox_search";
-            textBox_search.Size = new Size(247, 23);
+            textBox_search.Size = new Size(236, 23);
             textBox_search.TabIndex = 0;
             textBox_search.TextChanged += textBox_search_TextChanged;
             textBox_search.Enter += textBox_search_Enter;
@@ -56,7 +56,7 @@
             flowLayoutPanel_all.AutoScroll = true;
             flowLayoutPanel_all.Location = new Point(4, 192);
             flowLayoutPanel_all.Name = "flowLayoutPanel_all";
-            flowLayoutPanel_all.Size = new Size(247, 133);
+            flowLayoutPanel_all.Size = new Size(236, 133);
             flowLayoutPanel_all.TabIndex = 1;
             // 
             // textBox_opt
@@ -64,7 +64,7 @@
             textBox_opt.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             textBox_opt.Location = new Point(4, 331);
             textBox_opt.Name = "textBox_opt";
-            textBox_opt.Size = new Size(247, 23);
+            textBox_opt.Size = new Size(236, 23);
             textBox_opt.TabIndex = 2;
             // 
             // label_loading
@@ -74,7 +74,7 @@
             label_loading.Location = new Point(91, 220);
             label_loading.Margin = new Padding(0);
             label_loading.Name = "label_loading";
-            label_loading.Size = new Size(63, 20);
+            label_loading.Size = new Size(52, 20);
             label_loading.TabIndex = 1;
             label_loading.Text = "Loading";
             label_loading.TextAlign = ContentAlignment.MiddleCenter;
@@ -86,7 +86,7 @@
             flowLayoutPanel_recent.AutoScroll = true;
             flowLayoutPanel_recent.Location = new Point(4, 49);
             flowLayoutPanel_recent.Name = "flowLayoutPanel_recent";
-            flowLayoutPanel_recent.Size = new Size(247, 121);
+            flowLayoutPanel_recent.Size = new Size(236, 121);
             flowLayoutPanel_recent.TabIndex = 2;
             // 
             // label1
@@ -109,7 +109,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(254, 359);
+            ClientSize = new Size(243, 359);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(flowLayoutPanel_recent);
@@ -121,8 +121,9 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Form1";
-            Opacity = 0.9D;
+            Opacity = 0.7D;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Symbol Picker";
             TopMost = true;

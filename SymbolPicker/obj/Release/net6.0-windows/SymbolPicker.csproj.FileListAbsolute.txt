@@ -32,3 +32,4 @@ C:\C#sourceCode\SymbolPicker-fork\SymbolPicker\obj\Release\net6.0-windows\Symbol
 C:\C#sourceCode\SymbolPicker-fork\SymbolPicker\obj\Release\net6.0-windows\SymbolPicker.genruntimeconfig.cache
 C:\C#sourceCode\SymbolPicker-fork\SymbolPicker\obj\Release\net6.0-windows\ref\SymbolPicker.dll
 C:\C#sourceCode\SymbolPicker-fork\SymbolPicker\obj\Release\net6.0-windows\SymbolPicker.Form1.resources
+C:\C#sourceCode\SymbolPicker-fork\SymbolPicker\bin\Release\net6.0-windows\symbols.txt

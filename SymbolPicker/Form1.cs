@@ -61,6 +61,10 @@ namespace SymbolPicker
 
 
             TestInit();
+
+
+
+            FadeWindow(false);
         }
 
         private Button CreateOneButton(string tag, string txt)
@@ -450,24 +454,67 @@ namespace SymbolPicker
                 case 0x0312: //hotkey
                     switch ((int)m.WParam)
                     {
-                        case (int)Keys.B: //Win+B
-                            if(this.WindowState == FormWindowState.Minimized)
+                        case (int)Keys.B: //Ctrl+B
+
+                            label1.Focus(); //总是label1就好了
+                            if(this.Visible == false) //WindowState == FormWindowState.Minimized
                             {
-                                this.WindowState = FormWindowState.Normal;
-                                textBox_search.Focus();
+                                // label1.Focus();
+                                //this.Visible = true; //WindowState = FormWindowState.Normal
+                                FadeWindow(false);
+                                // textBox_search.Focus();
                             }
                             else
                             {
-                                textBox_opt.Focus(); //取消search的Focus（让窗口失去焦点，因为Focus那里用了个事件，如果没有了焦点就设置本窗口无焦点）
-                                this.WindowState = FormWindowState.Minimized;
+                                // label1.Focus(); //取消search的Focus（让窗口失去焦点，因为Focus那里用了个事件，如果没有了焦点就设置本窗口无焦点）
+                                //this.Visible = false; //WindowState = FormWindowState.Minimized
+                                FadeWindow(true);
                             }
-                            textBox_search.Focus();
                         break;
                     }
 
                     break;
             }
             base.WndProc(ref m);
+        }
+
+        private bool startedFade = false;
+        private async void FadeWindow(bool fadeOut)
+        {
+            if (startedFade) return;
+            startedFade = true;
+            double to = this.Opacity;
+            double original = this.Opacity;
+
+            if (!fadeOut)
+            {
+                this.Opacity = 0;
+                this.Visible = true;
+            }
+            int time = 12;
+            for(int i = 0; i < time; i++)
+            {
+                if (fadeOut) {
+                    if(this.Opacity - 1.0/time >= 0) this.Opacity -= 1.0 / time;
+                }
+                else
+                {
+                    if (this.Opacity + 1.0 / time <= original) this.Opacity += 1.0 / time;
+                }
+                await Task.Delay(1);
+            }
+            if (fadeOut)
+            {
+                this.Opacity = 0;
+                this.Visible = false;
+                this.Opacity = original;
+            }
+            else
+            {
+                this.Opacity = to;
+            }
+
+            startedFade = false;
         }
         #endregion
 
