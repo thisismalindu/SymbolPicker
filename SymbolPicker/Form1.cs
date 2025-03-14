@@ -54,7 +54,7 @@ namespace SymbolPicker
             LoadRecentButtons();
 
             AlwaysTopMost();
-            if(!HotKey.API_RegisterHotKey(this.Handle, (int)Keys.B, HotKey.control.Ctrl, Keys.B))
+            if (!HotKey.API_RegisterHotKey(this.Handle, (int)Keys.B, HotKey.control.Ctrl, Keys.B))
             {
                 MessageBox.Show("Can not reg hot key!");
             }
@@ -457,7 +457,7 @@ namespace SymbolPicker
                         case (int)Keys.B: //Ctrl+B
 
                             label1.Focus(); //总是label1就好了
-                            if(this.Visible == false) //WindowState == FormWindowState.Minimized
+                            if (this.Visible == false) //WindowState == FormWindowState.Minimized
                             {
                                 // label1.Focus();
                                 //this.Visible = true; //WindowState = FormWindowState.Normal
@@ -470,7 +470,7 @@ namespace SymbolPicker
                                 //this.Visible = false; //WindowState = FormWindowState.Minimized
                                 FadeWindow(true);
                             }
-                        break;
+                            break;
                     }
 
                     break;
@@ -492,10 +492,11 @@ namespace SymbolPicker
                 this.Visible = true;
             }
             int time = 12;
-            for(int i = 0; i < time; i++)
+            for (int i = 0; i < time; i++)
             {
-                if (fadeOut) {
-                    if(this.Opacity - 1.0/time >= 0) this.Opacity -= 1.0 / time;
+                if (fadeOut)
+                {
+                    if (this.Opacity - 1.0 / time >= 0) this.Opacity -= 1.0 / time;
                 }
                 else
                 {
@@ -518,6 +519,18 @@ namespace SymbolPicker
         }
         #endregion
 
+        private void transparentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // if transparent tool strip menu item is checked, set the form to be transparent
+            if (transparentToolStripMenuItem.Checked)
+            {
+                this.Opacity = 0.7;
+            }
+            else
+            {
+                this.Opacity = 1;
+            }
+        }
     }
 
     public class Symbol
