@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\C#sourceCode\\SymbolPicker-fork\\",
+  "WorkspaceRootPath": "D:\\repos\\SymbolPicker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54460062-6FC5-4FD8-A069-F2B3FE18F7B7}|SymbolPicker\\SymbolPicker.csproj|c:\\c#sourcecode\\symbolpicker-fork\\symbolpicker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54460062-6FC5-4FD8-A069-F2B3FE18F7B7}|SymbolPicker\\SymbolPicker.csproj|solutionrelative:symbolpicker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54460062-6FC5-4FD8-A069-F2B3FE18F7B7}|SymbolPicker\\SymbolPicker.csproj|D:\\repos\\SymbolPicker\\symbolpicker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{54460062-6FC5-4FD8-A069-F2B3FE18F7B7}|SymbolPicker\\SymbolPicker.csproj|solutionrelative:symbolpicker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54460062-6FC5-4FD8-A069-F2B3FE18F7B7}|SymbolPicker\\SymbolPicker.csproj|C:\\C#sourceCode\\SymbolPicker-fork\\symbolpicker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{54460062-6FC5-4FD8-A069-F2B3FE18F7B7}|SymbolPicker\\SymbolPicker.csproj|solutionrelative:symbolpicker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{54460062-6FC5-4FD8-A069-F2B3FE18F7B7}|SymbolPicker\\SymbolPicker.csproj|d:\\repos\\symbolpicker\\symbolpicker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54460062-6FC5-4FD8-A069-F2B3FE18F7B7}|SymbolPicker\\SymbolPicker.csproj|solutionrelative:symbolpicker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +30,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\C#sourceCode\\SymbolPicker-fork\\SymbolPicker\\Form1.cs",
+              "DocumentMoniker": "D:\\repos\\SymbolPicker\\SymbolPicker\\Form1.cs",
               "RelativeDocumentMoniker": "SymbolPicker\\Form1.cs",
-              "ToolTip": "C:\\C#sourceCode\\SymbolPicker-fork\\SymbolPicker\\Form1.cs",
+              "ToolTip": "D:\\repos\\SymbolPicker\\SymbolPicker\\Form1.cs",
               "RelativeToolTip": "SymbolPicker\\Form1.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAADwvysAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAgCAAAAAAAAAAArwA4CAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T23:07:16.379Z",
+              "WhenOpened": "2025-03-14T05:08:42.264Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "C:\\C#sourceCode\\SymbolPicker-fork\\SymbolPicker\\Form1.cs",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\repos\\SymbolPicker\\SymbolPicker\\Form1.cs",
               "RelativeDocumentMoniker": "SymbolPicker\\Form1.cs",
-              "ToolTip": "C:\\C#sourceCode\\SymbolPicker-fork\\SymbolPicker\\Form1.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "SymbolPicker\\Form1.cs [\u8BBE\u8BA1]",
+              "ToolTip": "D:\\repos\\SymbolPicker\\SymbolPicker\\Form1.cs [Design]",
+              "RelativeToolTip": "SymbolPicker\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-12T01:58:57.24Z",
-              "EditorCaption": " [\u8BBE\u8BA1]"
+              "EditorCaption": " [Design]"
             }
           ]
         },
