@@ -1,3 +1,5 @@
+using System;
+
 namespace SymbolPicker
 {
     internal static class Program

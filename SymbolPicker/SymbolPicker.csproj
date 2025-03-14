@@ -10,7 +10,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="symbols.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="icons8_alpha.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="symbols.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
