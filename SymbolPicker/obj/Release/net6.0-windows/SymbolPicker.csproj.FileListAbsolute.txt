@@ -51,3 +51,4 @@ D:\repos\SymbolPicker\SymbolPicker\obj\Release\net6.0-windows\refint\SymbolPicke
 D:\repos\SymbolPicker\SymbolPicker\obj\Release\net6.0-windows\SymbolPicker.pdb
 D:\repos\SymbolPicker\SymbolPicker\obj\Release\net6.0-windows\SymbolPicker.genruntimeconfig.cache
 D:\repos\SymbolPicker\SymbolPicker\obj\Release\net6.0-windows\ref\SymbolPicker.dll
+C:\C#sourceCode\SymbolPicker-fork\SymbolPicker\obj\Release\net6.0-windows\SymbolPicker.Settings.resources

@@ -4,6 +4,7 @@ namespace SymbolPicker
 {
     internal static class Program
     {
+        public static Settings SettingPage;
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>

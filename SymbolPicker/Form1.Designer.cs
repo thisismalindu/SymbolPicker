@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             textBox_search = new TextBox();
             flowLayoutPanel_all = new FlowLayoutPanel();
@@ -36,20 +37,21 @@
             flowLayoutPanel_recent = new FlowLayoutPanel();
             label1 = new Label();
             label2 = new Label();
-            menuStrip1 = new MenuStrip();
-            toolStripMenuItem1 = new ToolStripMenuItem();
-            transparentToolStripMenuItem = new ToolStripMenuItem();
-            menuStrip1.SuspendLayout();
+            notifyIcon_tray = new NotifyIcon(components);
+            contextMenuStrip_tray = new ContextMenuStrip(components);
+            toolStripMenuItem_show = new ToolStripMenuItem();
+            toolStripMenuItem_settings = new ToolStripMenuItem();
+            toolStripMenuItem_exit = new ToolStripMenuItem();
+            contextMenuStrip_tray.SuspendLayout();
             SuspendLayout();
             // 
             // textBox_search
             // 
-            textBox_search.Dock = DockStyle.Top;
             textBox_search.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox_search.Location = new Point(0, 24);
+            textBox_search.Location = new Point(4, 8);
             textBox_search.Name = "textBox_search";
-            textBox_search.Size = new Size(243, 23);
-            textBox_search.TabIndex = 0;
+            textBox_search.Size = new Size(236, 23);
+            textBox_search.TabIndex = 2;
             textBox_search.TextChanged += textBox_search_TextChanged;
             textBox_search.Enter += textBox_search_Enter;
             textBox_search.KeyDown += textBox_KeyDown;
@@ -67,12 +69,11 @@
             // 
             // textBox_opt
             // 
-            textBox_opt.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             textBox_opt.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             textBox_opt.Location = new Point(4, 331);
             textBox_opt.Name = "textBox_opt";
             textBox_opt.Size = new Size(236, 23);
-            textBox_opt.TabIndex = 2;
+            textBox_opt.TabIndex = 0;
             // 
             // label_loading
             // 
@@ -92,9 +93,9 @@
             // 
             flowLayoutPanel_recent.AutoScroll = true;
             flowLayoutPanel_recent.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            flowLayoutPanel_recent.Location = new Point(4, 65);
+            flowLayoutPanel_recent.Location = new Point(4, 54);
             flowLayoutPanel_recent.Name = "flowLayoutPanel_recent";
-            flowLayoutPanel_recent.Size = new Size(236, 105);
+            flowLayoutPanel_recent.Size = new Size(236, 116);
             flowLayoutPanel_recent.TabIndex = 2;
             // 
             // label1
@@ -108,41 +109,47 @@
             // 
             // label2
             // 
-            label2.Dock = DockStyle.Top;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(0, 47);
+            label2.Location = new Point(4, 34);
             label2.Name = "label2";
-            label2.Size = new Size(243, 17);
+            label2.Size = new Size(41, 17);
             label2.TabIndex = 4;
             label2.Text = "recent";
             // 
-            // menuStrip1
+            // notifyIcon_tray
             // 
-            menuStrip1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1 });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(243, 24);
-            menuStrip1.TabIndex = 5;
-            menuStrip1.Text = "File";
+            notifyIcon_tray.ContextMenuStrip = contextMenuStrip_tray;
+            notifyIcon_tray.Icon = (Icon)resources.GetObject("notifyIcon_tray.Icon");
+            notifyIcon_tray.Text = "Symbol Picker";
+            notifyIcon_tray.Visible = true;
+            notifyIcon_tray.Click += notifyIcon_tray_Click;
             // 
-            // toolStripMenuItem1
+            // contextMenuStrip_tray
             // 
-            toolStripMenuItem1.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { transparentToolStripMenuItem });
-            toolStripMenuItem1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(37, 20);
-            toolStripMenuItem1.Text = "&File";
+            contextMenuStrip_tray.Items.AddRange(new ToolStripItem[] { toolStripMenuItem_show, toolStripMenuItem_settings, toolStripMenuItem_exit });
+            contextMenuStrip_tray.Name = "contextMenuStrip_tray";
+            contextMenuStrip_tray.Size = new Size(181, 92);
             // 
-            // transparentToolStripMenuItem
+            // toolStripMenuItem_show
             // 
-            transparentToolStripMenuItem.CheckOnClick = true;
-            transparentToolStripMenuItem.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            transparentToolStripMenuItem.Name = "transparentToolStripMenuItem";
-            transparentToolStripMenuItem.Size = new Size(135, 22);
-            transparentToolStripMenuItem.Text = "Transparent";
-            transparentToolStripMenuItem.Click += transparentToolStripMenuItem_Click;
+            toolStripMenuItem_show.Name = "toolStripMenuItem_show";
+            toolStripMenuItem_show.Size = new Size(180, 22);
+            toolStripMenuItem_show.Text = "Show";
+            toolStripMenuItem_show.Click += toolStripMenuItem_show_Click;
+            // 
+            // toolStripMenuItem_settings
+            // 
+            toolStripMenuItem_settings.Name = "toolStripMenuItem_settings";
+            toolStripMenuItem_settings.Size = new Size(180, 22);
+            toolStripMenuItem_settings.Text = "Settings";
+            toolStripMenuItem_settings.Click += toolStripMenuItem_settings_Click;
+            // 
+            // toolStripMenuItem_exit
+            // 
+            toolStripMenuItem_exit.Name = "toolStripMenuItem_exit";
+            toolStripMenuItem_exit.Size = new Size(180, 22);
+            toolStripMenuItem_exit.Text = "Exit";
+            toolStripMenuItem_exit.Click += toolStripMenuItem_exit_Click;
             // 
             // Form1
             // 
@@ -156,7 +163,6 @@
             Controls.Add(textBox_opt);
             Controls.Add(flowLayoutPanel_all);
             Controls.Add(textBox_search);
-            Controls.Add(menuStrip1);
             Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -169,8 +175,7 @@
             FormClosing += Form1_FormClosing;
             Load += Form1_Load;
             KeyDown += Form1_KeyDown;
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
+            contextMenuStrip_tray.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -183,8 +188,10 @@
         private FlowLayoutPanel flowLayoutPanel_recent;
         private Label label1;
         private Label label2;
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem toolStripMenuItem1;
-        private ToolStripMenuItem transparentToolStripMenuItem;
+        private NotifyIcon notifyIcon_tray;
+        private ContextMenuStrip contextMenuStrip_tray;
+        private ToolStripMenuItem toolStripMenuItem_settings;
+        private ToolStripMenuItem toolStripMenuItem_exit;
+        private ToolStripMenuItem toolStripMenuItem_show;
     }
 }

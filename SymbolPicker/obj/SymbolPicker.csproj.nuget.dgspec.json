@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\repos\\SymbolPicker\\SymbolPicker\\SymbolPicker.csproj": {}
+    "C:\\C#sourceCode\\SymbolPicker-fork\\SymbolPicker\\SymbolPicker.csproj": {}
   },
   "projects": {
-    "D:\\repos\\SymbolPicker\\SymbolPicker\\SymbolPicker.csproj": {
+    "C:\\C#sourceCode\\SymbolPicker-fork\\SymbolPicker\\SymbolPicker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\SymbolPicker\\SymbolPicker\\SymbolPicker.csproj",
+        "projectUniqueName": "C:\\C#sourceCode\\SymbolPicker-fork\\SymbolPicker\\SymbolPicker.csproj",
         "projectName": "SymbolPicker",
-        "projectPath": "D:\\repos\\SymbolPicker\\SymbolPicker\\SymbolPicker.csproj",
-        "packagesPath": "C:\\Users\\Malindu\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\SymbolPicker\\SymbolPicker\\obj\\",
+        "projectPath": "C:\\C#sourceCode\\SymbolPicker-fork\\SymbolPicker\\SymbolPicker.csproj",
+        "packagesPath": "C:\\Users\\yang2\\.nuget\\packages\\",
+        "outputPath": "C:\\C#sourceCode\\SymbolPicker-fork\\SymbolPicker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Malindu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yang2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,24 +61,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -86,7 +69,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
