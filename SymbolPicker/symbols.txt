@@ -70,8 +70,10 @@ dagger sword
 †
 does not divide
 ∤
-dot operator
+thin dot operator
 ⋅
+thick dot operator
+·
 double dagger
 ‡
 double integral

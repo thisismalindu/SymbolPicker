@@ -160,7 +160,7 @@ greek small letter chi
 χ
 greek small letter delta
 δ
-greek small letter epsilon
+greek small letter epsilon emf
 ε
 greek small letter eta
 η
