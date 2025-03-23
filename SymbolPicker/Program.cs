@@ -6,8 +6,9 @@ namespace SymbolPicker
     internal static class Program
     {
         public static Settings SettingPage;
+        public static Form1 MainForm;
 
-        private static Mutex mutex = new Mutex(false, "Global\\_SymbolPicker_");
+        public static Mutex mutex = new Mutex(false, "Global\\_SymbolPicker_");
         public const int MUTEXMESSAGE = 0x8000 + 100; //WM_APP 0x8000 ~ 0xBFFF
 
 
@@ -20,7 +21,8 @@ namespace SymbolPicker
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
 
-            if (!mutex.WaitOne(100, false))
+            Thread.Sleep(100); //maybe restart
+            if (!mutex.WaitOne(500, false)) //500ms£¬maybe settings restart
             {
                 SendMutexMsgToWindow();
                 Environment.Exit(0);
@@ -28,7 +30,8 @@ namespace SymbolPicker
 
 
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            MainForm = new Form1();
+            Application.Run(MainForm);
         }
 
         #region mutex send message

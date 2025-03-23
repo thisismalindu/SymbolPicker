@@ -168,7 +168,9 @@ namespace SymbolPicker
 
             //restart
             System.Diagnostics.Process.Start(Application.ExecutablePath);
-            Environment.Exit(0);
+            Thread.Sleep(100);
+            //Environment.Exit(0);
+            Program.MainForm.EndProgram();
         }
 
         public List<Control> EnumAllControls(Control parent)

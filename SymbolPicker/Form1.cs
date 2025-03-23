@@ -190,9 +190,10 @@ namespace SymbolPicker
                 EndProgram();
             }
         }
-        private void EndProgram()
+        public void EndProgram()
         {
             SaveRecent();
+            Program.mutex.ReleaseMutex();
             HotKey.API_UnregisterHotKey(this.Handle, SHOWHIDEHOTKEYCODE);
             Environment.Exit(0); //because the thread in AlwaysTopMost
         }
@@ -272,6 +273,8 @@ namespace SymbolPicker
             AddButtonsToLayout(recentSymbolButtons, flowLayoutPanel_recent);
 
             #endregion
+
+            SaveRecent();
 
             #endregion
 
