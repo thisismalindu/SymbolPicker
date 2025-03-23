@@ -1,12 +1,10 @@
-﻿copyright
-©
-alpha
+﻿greek alpha
 α
-beta
+greek beta
 β
-gamma
+greek gamma
 γ
-delta
+greek delta
 δ
 pi
 π
@@ -132,45 +130,33 @@ fullwidth plus sign
 ＋
 greater than or equal to
 ≥
-greek capital letter delta
-δ
-greek capital letter gamma
-γ
 greek capital letter lamda lambda
 λ
-greek capital letter omega
+greek capital letter omega w
 ω
-greek capital letter phi
+greek capital letter phi o
 φ
 greek capital letter pi
 π
 greek capital letter psi
 ψ
-greek capital letter sigma
+greek capital letter sigma o
 σ
-greek capital letter theta
+greek capital letter theta o
 θ
-greek capital letter upsilon
+greek capital letter upsilon u
 υ
 greek capital letter xi
 ξ
-greek small letter alpha
-α
-greek small letter beta
-β
-greek small letter chi
+greek small letter chi x
 χ
-greek small letter delta
-δ
-greek small letter epsilon emf
+greek small letter epsilon emf e
 ε
-greek small letter eta
+greek small letter eta n
 η
-greek small letter gamma
-γ
-greek small letter iota
+greek small letter iota l
 ι
-greek small letter kappa
+greek small letter kappa k
 κ
 greek small letter lamda lambda
 λ
@@ -1490,104 +1476,68 @@ mathematical script small y
 𝓎
 mathematical script small z
 𝓏
+circle a
+Ⓐ
+circle b
+Ⓑ
+circle c
+Ⓒ
+small circle c copyright
+©
+circle d
+Ⓓ
+circle e
+Ⓔ
+circle f
+Ⓕ
+circle g
+Ⓖ
+circle h
+Ⓗ
+circle i
+Ⓘ
+circle j
+Ⓙ
+circle k
+Ⓚ
+circle l
+Ⓛ
+circle m
+Ⓜ
+small circle m
+🆭
+circle n
+Ⓝ
+circle o
+Ⓞ
+circle p
+Ⓟ
+circle q
+Ⓠ
+circle r
+Ⓡ
+small circle r
+®
+circle s
+Ⓢ
+circle t
+Ⓣ
+circle u
+Ⓤ
+circle v
+Ⓥ
+circle w
+Ⓦ
+circle x
+Ⓧ
+circle y
+Ⓨ
+circle z
+Ⓩ
 minus sign
 −
 minus or plus sign
 ∓
-modifier letter capital a
-ᴬ
-modifier letter capital b
-ᴮ
-modifier letter capital d
-ᴰ
-modifier letter capital e
-ᴱ
-modifier letter capital g
-ᴳ
-modifier letter capital h
-ᴴ
-modifier letter capital i
-ᴵ
-modifier letter capital j
-ᴶ
-modifier letter capital k
-ᴷ
-modifier letter capital l
-ᴸ
-modifier letter capital m
-ᴹ
-modifier letter capital n
-ᴺ
-modifier letter capital p
-ᴾ
-modifier letter capital r
-ᴿ
-modifier letter capital t
-ᵀ
-modifier letter capital u
-ᵁ
-modifier letter capital v
-ⱽ
-modifier letter capital w
-ᵂ
-modifier letter double prime
-ʺ
-modifier letter plus sign
-˖
-modifier letter prime
-ʹ
-modifier letter raised down arrow
-ꜜ
-modifier letter raised up arrow
-ꜛ
-modifier letter small a
-ᵃ
-modifier letter small b
-ᵇ
-modifier letter small c
-ᶜ
-modifier letter small d
-ᵈ
-modifier letter small e
-ᵉ
-modifier letter small f
-ᶠ
-modifier letter small g
-ᵍ
-modifier letter small h
-ʰ
-modifier letter small j
-ʲ
-modifier letter small k
-ᵏ
-modifier letter small l
-ˡ
-modifier letter small m
-ᵐ
-modifier letter small o
-ᵒ
-modifier letter small p
-ᵖ
-modifier letter small r
-ʳ
-modifier letter small s
-ˢ
-modifier letter small t
-ᵗ
-modifier letter small theta
-ᶿ
-modifier letter small u
-ᵘ
-modifier letter small v
-ᵛ
-modifier letter small w
-ʷ
-modifier letter small x
-ˣ
-modifier letter small y
-ʸ
-modifier letter small z
-ᶻ
 mongolian ellipsis
 ᠁
 much greater than >
@@ -1664,46 +1614,10 @@ script small o
 ℴ
 star operator
 ⋆
-subscript five
-𝐱₅
-subscript four
-𝐱₄
-subscript minus
-𝐱₋
-subscript one
-𝐱₁
-subscript plus sign
-𝐱₊
-subscript three
-𝐱₃
-subscript two
-𝐱₂
-subscript zero
-𝐱₀
 subset of
 ⊂
 subset of or equal to
 ⊆
-superscript four
-𝐱⁴
-superscript latin small letter i
-𝐱ⁱ
-superscript latin small letter n
-𝐱ⁿ
-superscript left parenthesis
-𝐱⁽
-superscript minus
-𝐱⁻
-superscript one
-𝐱¹
-superscript right parenthesis
-𝐱⁾
-superscript three
-𝐱³
-superscript two
-𝐱²
-superscript zero
-𝐱⁰
 superset of
 ⊃
 superset of or equal to
@@ -1784,55 +1698,101 @@ right parentheses power )
 ⁾
 parentheses power pair ()
 ⁽⁾
-a power
+modifier capital a power
+ᴬ
+modifier capital b power
+ᴮ
+modifier capital d power
+ᴰ
+modifier capital e power
+ᴱ
+modifier capital g power
+ᴳ
+modifier capital h power
+ᴴ
+modifier capital i power
+ᴵ
+modifier capital j power
+ᴶ
+modifier capital k power
+ᴷ
+modifier capital l power
+ᴸ
+modifier capital m power
+ᴹ
+modifier capital n power
+ᴺ
+modifier capital p power
+ᴾ
+modifier capital r power
+ᴿ
+modifier capital t power
+ᵀ
+modifier capital u power
+ᵁ
+modifier capital v power
+ⱽ
+modifier capital w power
+ᵂ
+modifier double prime
+ʺ
+modifier prime
+ʹ
+modifier raised down arrow power
+ꜜ
+modifier raised up arrow power
+ꜛ
+modifier small theta power
+ᶿ
+modifier a power
 ᵃ
-b power
+modifier b power
 ᵇ
-c power
+modifier c power
 ᶜ
-d power
+modifier d power
 ᵈ
-e power
+modifier e power
 ᵉ
-f power
+modifier f power
 ᶠ
-g power
+modifier g power
 ᶢ
-h power
+modifier h power
 ʰ
-i power
+modifier i power
 ⁱ
-j power
+modifier j power
 ʲ
-k power
+modifier k power
 ᵏ
-l power
+modifier l power
 ˡ
-m power
+modifier m power
 ᵐ
-n power
+modifier n power
 ⁿ
-o power
+modifier o power
 ᵒ
-p power
+modifier p power
 ᵖ
-r power
+modifier r power
 ʳ
-s power
+modifier s power
 ˢ
-t power
+modifier t power
 ᵗ
-u power
+modifier u power
 ᵘ
-v power
+modifier v power
 ᵛ
-w power
+modifier w power
 ʷ
-x power
+modifier x power
 ˣ
-y power
+modifier y power
 ʸ
-z power
+modifier z power
 ᶻ
 subscript zero 0
 ₀
