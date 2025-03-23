@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SymbolPicker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5adf0b0bcce74e2b30bbe759c7307ca446b4882")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b7e1e30aba9709dba306fad35e8ec6bf627fcd4")]
 [assembly: System.Reflection.AssemblyProductAttribute("SymbolPicker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SymbolPicker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
