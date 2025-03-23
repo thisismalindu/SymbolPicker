@@ -59,7 +59,7 @@ namespace SymbolPicker
             Program.SettingPage = new Settings();
             Program.SettingPage.Show(); //only show first can let it init
             Program.SettingPage.Hide();
-            Thread.Sleep(500); // setting restart Mutex, let settings load
+            Thread.Sleep(500); // let settings load
 
             //check Mutex here
 
@@ -517,6 +517,16 @@ namespace SymbolPicker
                             break;
                     }
 
+                    break;
+                case Program.MUTEXMESSAGE:
+                    if(this.Visible == false)
+                    {
+                        FadeWindow(false);
+                    }
+                    else
+                    {
+                        this.TopMost = true;
+                    }
                     break;
             }
             base.WndProc(ref m);
