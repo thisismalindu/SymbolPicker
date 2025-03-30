@@ -22,6 +22,9 @@ namespace SymbolPicker
         private static Size templateSize = new System.Drawing.Size(30, 30);
 
 
+        private static Keys showHideHotKey;
+        private const int SHOWHIDEHOTKEYCODE = 1;
+
         #region test
         private void TestInit()
         {
@@ -50,19 +53,47 @@ namespace SymbolPicker
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            LoadAllButtons();
-            LoadRecentButtons();
-
-            AlwaysTopMost();
-            if (!HotKey.API_RegisterHotKey(this.Handle, (int)Keys.B, HotKey.control.Ctrl, Keys.B))
-            {
-                MessageBox.Show("Can not reg hot key!");
-            }
-
-
             TestInit();
 
 
+            Program.SettingPage = new Settings();
+            Program.SettingPage.Show(); //only show first can let it init
+            Program.SettingPage.Hide();
+            Thread.Sleep(500); // let settings load
+
+            //check Mutex here
+
+
+            LoadAllButtons();
+            LoadRecentButtons();
+
+            // AlwaysTopMost(); conflict with setting window, abandoned
+
+
+            if (Program.SettingPage.checkBox_reg_hotkey.Checked)
+            {
+                if (char.IsLetterOrDigit(Program.SettingPage.textBox_hotkey.Text[0]))
+                {
+                    showHideHotKey = (Keys)Enum.Parse(typeof(Keys), Program.SettingPage.textBox_hotkey.Text.ToUpper());
+                    if (!HotKey.API_RegisterHotKey(this.Handle, SHOWHIDEHOTKEYCODE, HotKey.control.Ctrl, showHideHotKey))
+                    {
+                        MessageBox.Show("Can not reg hot key!");
+                    }
+                    else
+                    {
+                        //Tray notify
+                        this.notifyIcon_tray.Text += $" ( Ctrl + {Program.SettingPage.textBox_hotkey.Text[0]})";
+                        this.toolStripMenuItem_show.Text += $" ( Ctrl + {Program.SettingPage.textBox_hotkey.Text[0]})";
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Can not parse which hot key!");
+                }
+            }
+
+            this.Opacity = Program.SettingPage.trackBar_intrans.Value / 100.0;
+            //MessageBox.Show((Program.SettingPage.trackBar_intrans.Value).ToString());
 
             FadeWindow(false);
         }
@@ -143,13 +174,27 @@ namespace SymbolPicker
                 }
             });
         }
+
         #endregion
 
         #region end
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
+            if (Program.SettingPage.checkBox_tray.Checked)
+            {
+                e.Cancel = true;
+                FadeWindow(true);
+            }
+            else
+            {
+                EndProgram();
+            }
+        }
+        public void EndProgram()
+        {
             SaveRecent();
-            HotKey.API_UnregisterHotKey(this.Handle, (int)Keys.B);
+            Program.mutex.ReleaseMutex();
+            HotKey.API_UnregisterHotKey(this.Handle, SHOWHIDEHOTKEYCODE);
             Environment.Exit(0); //because the thread in AlwaysTopMost
         }
         public static void SaveRecent()
@@ -228,6 +273,8 @@ namespace SymbolPicker
             AddButtonsToLayout(recentSymbolButtons, flowLayoutPanel_recent);
 
             #endregion
+
+            SaveRecent();
 
             #endregion
 
@@ -454,7 +501,7 @@ namespace SymbolPicker
                 case 0x0312: //hotkey
                     switch ((int)m.WParam)
                     {
-                        case (int)Keys.B: //Ctrl+B
+                        case SHOWHIDEHOTKEYCODE:
 
                             label1.Focus(); //总是label1就好了
                             if (this.Visible == false) //WindowState == FormWindowState.Minimized
@@ -473,6 +520,16 @@ namespace SymbolPicker
                             break;
                     }
 
+                    break;
+                case Program.MUTEXMESSAGE:
+                    if(this.Visible == false)
+                    {
+                        FadeWindow(false);
+                    }
+                    else
+                    {
+                        this.TopMost = true;
+                    }
                     break;
             }
             base.WndProc(ref m);
@@ -513,24 +570,38 @@ namespace SymbolPicker
             else
             {
                 this.Opacity = to;
+
+                this.TopMost = true;
             }
 
             startedFade = false;
         }
         #endregion
 
-        private void transparentToolStripMenuItem_Click(object sender, EventArgs e)
+        #region tray
+        private void notifyIcon_tray_Click(object sender, EventArgs e)
         {
-            // if transparent tool strip menu item is checked, set the form to be transparent
-            if (transparentToolStripMenuItem.Checked)
+            MouseEventArgs me = e as MouseEventArgs;
+            if (me != null && me.Button == MouseButtons.Left)
             {
-                this.Opacity = 0.7;
-            }
-            else
-            {
-                this.Opacity = 1;
+                FadeWindow(false);
             }
         }
+        private void toolStripMenuItem_show_Click(object sender, EventArgs e)
+        {
+            FadeWindow(false);
+        }
+        private void toolStripMenuItem_settings_Click(object sender, EventArgs e)
+        {
+            FadeWindow(true);
+            Program.SettingPage.Show();
+        }
+        private void toolStripMenuItem_exit_Click(object sender, EventArgs e)
+        {
+            EndProgram();
+        }
+        #endregion
+
     }
 
     public class Symbol

@@ -1,12 +1,10 @@
-﻿copyright
-©
-alpha
+﻿greek alpha
 α
-beta
+greek beta
 β
-gamma
+greek gamma
 γ
-delta
+greek delta
 δ
 pi
 π
@@ -70,37 +68,39 @@ dagger sword
 †
 does not divide
 ∤
-dot operator
+thin dot operator
 ⋅
+thick dot operator
+·
 double dagger
 ‡
 double integral
 ∬
-double-struck capital c
+double struck capital c
 ℂ
-double-struck capital h
+double struck capital h
 ℍ
-double-struck capital n
+double struck capital n
 ℕ
-double-struck capital p
+double struck capital p
 ℙ
-double-struck capital q
+double struck capital q
 ℚ
-double-struck capital r
+double struck capital r
 ℝ
-double-struck capital z
+double struck capital z
 ℤ
-double-struck italic capital d
+double struck italic capital d
 ⅅ
-double-struck italic small d
+double struck italic small d
 ⅆ
-double-struck italic small e
+double struck italic small e
 ⅇ
-double-struck italic small i
+double struck italic small i
 ⅈ
-double-struck italic small j
+double struck italic small j
 ⅉ
-double-struck small pi
+double struck small pi
 ℼ
 down tack
 ⊤
@@ -110,7 +110,7 @@ downwards arrow with corner leftwards
 ↵
 downwards arrow with double stroke
 ⇟
-downwards triangle-headed arrow
+downwards triangle headed arrow
 ⭣
 element of
 ∈
@@ -128,16 +128,12 @@ for all
 ∀
 fullwidth plus sign
 ＋
-greater-than or equal to
+greater than or equal to
 ≥
-greek capital letter delta
-δ
-greek capital letter gamma
-γ
 greek capital letter lamda lambda
 λ
-greek capital letter omega
-ω
+greek capital letter omega ohm
+Ω
 greek capital letter phi
 φ
 greek capital letter pi
@@ -148,27 +144,19 @@ greek capital letter sigma
 σ
 greek capital letter theta
 θ
-greek capital letter upsilon
+greek capital letter upsilon u
 υ
 greek capital letter xi
 ξ
-greek small letter alpha
-α
-greek small letter beta
-β
-greek small letter chi
+greek small letter chi x
 χ
-greek small letter delta
-δ
-greek small letter epsilon
+greek small letter epsilon emf e
 ε
-greek small letter eta
+greek small letter eta n
 η
-greek small letter gamma
-γ
-greek small letter iota
+greek small letter iota l
 ι
-greek small letter kappa
+greek small letter kappa k
 κ
 greek small letter lamda lambda
 λ
@@ -222,7 +210,7 @@ latin subscript small letter v
 ᵥ
 left right double arrow
 ⇔
-left right triangle-headed arrow
+left right triangle headed arrow
 ⭤
 leftwards arrow
 ←
@@ -234,9 +222,9 @@ leftwards arrow with tail
 ↢
 leftwards double arrow from bar
 ⤆
-leftwards triangle-headed arrow
+leftwards triangle headed arrow
 ⭠
-less-than or equal to
+less than or equal to
 ≤
 logical and
 ∧
@@ -714,95 +702,95 @@ mathematical bold small z
 𝐳
 mathematical bold small zeta
 𝛇
-mathematical double-struck capital a
+mathematical double struck capital a
 𝔸
-mathematical double-struck capital b
+mathematical double struck capital b
 𝔹
-mathematical double-struck capital d
+mathematical double struck capital d
 𝔻
-mathematical double-struck capital e
+mathematical double struck capital e
 𝔼
-mathematical double-struck capital f
+mathematical double struck capital f
 𝔽
-mathematical double-struck capital g
+mathematical double struck capital g
 𝔾
-mathematical double-struck capital j
+mathematical double struck capital j
 𝕁
-mathematical double-struck capital k
+mathematical double struck capital k
 𝕂
-mathematical double-struck capital l
+mathematical double struck capital l
 𝕃
-mathematical double-struck capital m
+mathematical double struck capital m
 𝕄
-mathematical double-struck capital o
+mathematical double struck capital o
 𝕆
-mathematical double-struck capital s
+mathematical double struck capital s
 𝕊
-mathematical double-struck capital t
+mathematical double struck capital t
 𝕋
-mathematical double-struck capital u
+mathematical double struck capital u
 𝕌
-mathematical double-struck capital v
+mathematical double struck capital v
 𝕍
-mathematical double-struck capital w
+mathematical double struck capital w
 𝕎
-mathematical double-struck capital x
+mathematical double struck capital x
 𝕏
-mathematical double-struck capital y
+mathematical double struck capital y
 𝕐
-mathematical double-struck digit one
+mathematical double struck digit one
 𝟙
-mathematical double-struck digit two
+mathematical double struck digit two
 𝟚
-mathematical double-struck digit zero
+mathematical double struck digit zero
 𝟘
-mathematical double-struck small a
+mathematical double struck small a
 𝕒
-mathematical double-struck small b
+mathematical double struck small b
 𝕓
-mathematical double-struck small c
+mathematical double struck small c
 𝕔
-mathematical double-struck small d
+mathematical double struck small d
 𝕕
-mathematical double-struck small e
+mathematical double struck small e
 𝕖
-mathematical double-struck small f
+mathematical double struck small f
 𝕗
-mathematical double-struck small g
+mathematical double struck small g
 𝕘
-mathematical double-struck small h
+mathematical double struck small h
 𝕙
-mathematical double-struck small i
+mathematical double struck small i
 𝕚
-mathematical double-struck small j
+mathematical double struck small j
 𝕛
-mathematical double-struck small k
+mathematical double struck small k
 𝕜
-mathematical double-struck small m
+mathematical double struck small m
 𝕞
-mathematical double-struck small n
+mathematical double struck small n
 𝕟
-mathematical double-struck small o
+mathematical double struck small o
 𝕠
-mathematical double-struck small p
+mathematical double struck small p
 𝕡
-mathematical double-struck small q
+mathematical double struck small q
 𝕢
-mathematical double-struck small s
+mathematical double struck small s
 𝕤
-mathematical double-struck small t
+mathematical double struck small t
 𝕥
-mathematical double-struck small u
+mathematical double struck small u
 𝕦
-mathematical double-struck small v
+mathematical double struck small v
 𝕧
-mathematical double-struck small w
+mathematical double struck small w
 𝕨
-mathematical double-struck small x
+mathematical double struck small x
 𝕩
-mathematical double-struck small y
+mathematical double struck small y
 𝕪
-mathematical double-struck small z
+mathematical double struck small z
 𝕫
 mathematical italic capital a
 𝐴
@@ -990,421 +978,421 @@ mathematical right double angle bracket
 ⟫
 mathematical right white square bracket
 ⟧
-mathematical sans-serif bold capital a
+mathematical sans serif bold capital a
 𝗔
-mathematical sans-serif bold capital b
+mathematical sans serif bold capital b
 𝗕
-mathematical sans-serif bold capital c
+mathematical sans serif bold capital c
 𝗖
-mathematical sans-serif bold capital d
+mathematical sans serif bold capital d
 𝗗
-mathematical sans-serif bold capital e
+mathematical sans serif bold capital e
 𝗘
-mathematical sans-serif bold capital f
+mathematical sans serif bold capital f
 𝗙
-mathematical sans-serif bold capital g
+mathematical sans serif bold capital g
 𝗚
-mathematical sans-serif bold capital h
+mathematical sans serif bold capital h
 𝗛
-mathematical sans-serif bold capital i
+mathematical sans serif bold capital i
 𝗜
-mathematical sans-serif bold capital j
+mathematical sans serif bold capital j
 𝗝
-mathematical sans-serif bold capital k
+mathematical sans serif bold capital k
 𝗞
-mathematical sans-serif bold capital l
+mathematical sans serif bold capital l
 𝗟
-mathematical sans-serif bold capital m
+mathematical sans serif bold capital m
 𝗠
-mathematical sans-serif bold capital n
+mathematical sans serif bold capital n
 𝗡
-mathematical sans-serif bold capital o
+mathematical sans serif bold capital o
 𝗢
-mathematical sans-serif bold capital p
+mathematical sans serif bold capital p
 𝗣
-mathematical sans-serif bold capital q
+mathematical sans serif bold capital q
 𝗤
-mathematical sans-serif bold capital r
+mathematical sans serif bold capital r
 𝗥
-mathematical sans-serif bold capital s
+mathematical sans serif bold capital s
 𝗦
-mathematical sans-serif bold capital t
+mathematical sans serif bold capital t
 𝗧
-mathematical sans-serif bold capital u
+mathematical sans serif bold capital u
 𝗨
-mathematical sans-serif bold capital v
+mathematical sans serif bold capital v
 𝗩
-mathematical sans-serif bold capital w
+mathematical sans serif bold capital w
 𝗪
-mathematical sans-serif bold capital x
+mathematical sans serif bold capital x
 𝗫
-mathematical sans-serif bold capital y
+mathematical sans serif bold capital y
 𝗬
-mathematical sans-serif bold capital z
+mathematical sans serif bold capital z
 𝗭
-mathematical sans-serif bold italic capital a
+mathematical sans serif bold italic capital a
 𝘼
-mathematical sans-serif bold italic capital b
+mathematical sans serif bold italic capital b
 𝘽
-mathematical sans-serif bold italic capital c
+mathematical sans serif bold italic capital c
 𝘾
-mathematical sans-serif bold italic capital d
+mathematical sans serif bold italic capital d
 𝘿
-mathematical sans-serif bold italic capital e
+mathematical sans serif bold italic capital e
 𝙀
-mathematical sans-serif bold italic capital f
+mathematical sans serif bold italic capital f
 𝙁
-mathematical sans-serif bold italic capital g
+mathematical sans serif bold italic capital g
 𝙂
-mathematical sans-serif bold italic capital h
+mathematical sans serif bold italic capital h
 𝙃
-mathematical sans-serif bold italic capital i
+mathematical sans serif bold italic capital i
 𝙄
-mathematical sans-serif bold italic capital j
+mathematical sans serif bold italic capital j
 𝙅
-mathematical sans-serif bold italic capital k
+mathematical sans serif bold italic capital k
 𝙆
-mathematical sans-serif bold italic capital l
+mathematical sans serif bold italic capital l
 𝙇
-mathematical sans-serif bold italic capital m
+mathematical sans serif bold italic capital m
 𝙈
-mathematical sans-serif bold italic capital n
+mathematical sans serif bold italic capital n
 𝙉
-mathematical sans-serif bold italic capital o
+mathematical sans serif bold italic capital o
 𝙊
-mathematical sans-serif bold italic capital p
+mathematical sans serif bold italic capital p
 𝙋
-mathematical sans-serif bold italic capital q
+mathematical sans serif bold italic capital q
 𝙌
-mathematical sans-serif bold italic capital r
+mathematical sans serif bold italic capital r
 𝙍
-mathematical sans-serif bold italic capital s
+mathematical sans serif bold italic capital s
 𝙎
-mathematical sans-serif bold italic capital t
+mathematical sans serif bold italic capital t
 𝙏
-mathematical sans-serif bold italic capital u
+mathematical sans serif bold italic capital u
 𝙐
-mathematical sans-serif bold italic capital v
+mathematical sans serif bold italic capital v
 𝙑
-mathematical sans-serif bold italic capital w
+mathematical sans serif bold italic capital w
 𝙒
-mathematical sans-serif bold italic capital x
+mathematical sans serif bold italic capital x
 𝙓
-mathematical sans-serif bold italic capital y
+mathematical sans serif bold italic capital y
 𝙔
-mathematical sans-serif bold italic capital z
+mathematical sans serif bold italic capital z
 𝙕
-mathematical sans-serif bold italic small a
+mathematical sans serif bold italic small a
 𝙖
-mathematical sans-serif bold italic small b
+mathematical sans serif bold italic small b
 𝙗
-mathematical sans-serif bold italic small c
+mathematical sans serif bold italic small c
 𝙘
-mathematical sans-serif bold italic small d
+mathematical sans serif bold italic small d
 𝙙
-mathematical sans-serif bold italic small e
+mathematical sans serif bold italic small e
 𝙚
-mathematical sans-serif bold italic small f
+mathematical sans serif bold italic small f
 𝙛
-mathematical sans-serif bold italic small g
+mathematical sans serif bold italic small g
 𝙜
-mathematical sans-serif bold italic small h
+mathematical sans serif bold italic small h
 𝙝
-mathematical sans-serif bold italic small i
+mathematical sans serif bold italic small i
 𝙞
-mathematical sans-serif bold italic small j
+mathematical sans serif bold italic small j
 𝙟
-mathematical sans-serif bold italic small k
+mathematical sans serif bold italic small k
 𝙠
-mathematical sans-serif bold italic small l
+mathematical sans serif bold italic small l
 𝙡
-mathematical sans-serif bold italic small m
+mathematical sans serif bold italic small m
 𝙢
-mathematical sans-serif bold italic small n
+mathematical sans serif bold italic small n
 𝙣
-mathematical sans-serif bold italic small o
+mathematical sans serif bold italic small o
 𝙤
-mathematical sans-serif bold italic small p
+mathematical sans serif bold italic small p
 𝙥
-mathematical sans-serif bold italic small q
+mathematical sans serif bold italic small q
 𝙦
-mathematical sans-serif bold italic small r
+mathematical sans serif bold italic small r
 𝙧
-mathematical sans-serif bold italic small s
+mathematical sans serif bold italic small s
 𝙨
-mathematical sans-serif bold italic small t
+mathematical sans serif bold italic small t
 𝙩
-mathematical sans-serif bold italic small u
+mathematical sans serif bold italic small u
 𝙪
-mathematical sans-serif bold italic small v
+mathematical sans serif bold italic small v
 𝙫
-mathematical sans-serif bold italic small w
+mathematical sans serif bold italic small w
 𝙬
-mathematical sans-serif bold italic small x
+mathematical sans serif bold italic small x
 𝙭
-mathematical sans-serif bold italic small y
+mathematical sans serif bold italic small y
 𝙮
-mathematical sans-serif bold italic small z
+mathematical sans serif bold italic small z
 𝙯
-mathematical sans-serif bold small a
+mathematical sans serif bold small a
 𝗮
-mathematical sans-serif bold small b
+mathematical sans serif bold small b
 𝗯
-mathematical sans-serif bold small c
+mathematical sans serif bold small c
 𝗰
-mathematical sans-serif bold small d
+mathematical sans serif bold small d
 𝗱
-mathematical sans-serif bold small e
+mathematical sans serif bold small e
 𝗲
-mathematical sans-serif bold small f
+mathematical sans serif bold small f
 𝗳
-mathematical sans-serif bold small g
+mathematical sans serif bold small g
 𝗴
-mathematical sans-serif bold small h
+mathematical sans serif bold small h
 𝗵
-mathematical sans-serif bold small i
+mathematical sans serif bold small i
 𝗶
-mathematical sans-serif bold small j
+mathematical sans serif bold small j
 𝗷
-mathematical sans-serif bold small k
+mathematical sans serif bold small k
 𝗸
-mathematical sans-serif bold small l
+mathematical sans serif bold small l
 𝗹
-mathematical sans-serif bold small m
+mathematical sans serif bold small m
 𝗺
-mathematical sans-serif bold small n
+mathematical sans serif bold small n
 𝗻
-mathematical sans-serif bold small o
+mathematical sans serif bold small o
 𝗼
-mathematical sans-serif bold small p
+mathematical sans serif bold small p
 𝗽
-mathematical sans-serif bold small q
+mathematical sans serif bold small q
 𝗾
-mathematical sans-serif bold small r
+mathematical sans serif bold small r
 𝗿
-mathematical sans-serif bold small s
+mathematical sans serif bold small s
 𝘀
-mathematical sans-serif bold small t
+mathematical sans serif bold small t
 𝘁
-mathematical sans-serif bold small u
+mathematical sans serif bold small u
 𝘂
-mathematical sans-serif bold small v
+mathematical sans serif bold small v
 𝘃
-mathematical sans-serif bold small w
+mathematical sans serif bold small w
 𝘄
-mathematical sans-serif bold small x
+mathematical sans serif bold small x
 𝘅
-mathematical sans-serif bold small y
+mathematical sans serif bold small y
 𝘆
-mathematical sans-serif bold small z
+mathematical sans serif bold small z
 𝘇
-mathematical sans-serif capital a
+mathematical sans serif capital a
 𝖠
-mathematical sans-serif capital b
+mathematical sans serif capital b
 𝖡
-mathematical sans-serif capital c
+mathematical sans serif capital c
 𝖢
-mathematical sans-serif capital d
+mathematical sans serif capital d
 𝖣
-mathematical sans-serif capital e
+mathematical sans serif capital e
 𝖤
-mathematical sans-serif capital f
+mathematical sans serif capital f
 𝖥
-mathematical sans-serif capital g
+mathematical sans serif capital g
 𝖦
-mathematical sans-serif capital h
+mathematical sans serif capital h
 𝖧
-mathematical sans-serif capital i
+mathematical sans serif capital i
 𝖨
-mathematical sans-serif capital j
+mathematical sans serif capital j
 𝖩
-mathematical sans-serif capital k
+mathematical sans serif capital k
 𝖪
-mathematical sans-serif capital l
+mathematical sans serif capital l
 𝖫
-mathematical sans-serif capital m
+mathematical sans serif capital m
 𝖬
-mathematical sans-serif capital n
+mathematical sans serif capital n
 𝖭
-mathematical sans-serif capital o
+mathematical sans serif capital o
 𝖮
-mathematical sans-serif capital p
+mathematical sans serif capital p
 𝖯
-mathematical sans-serif capital q
+mathematical sans serif capital q
 𝖰
-mathematical sans-serif capital r
+mathematical sans serif capital r
 𝖱
-mathematical sans-serif capital s
+mathematical sans serif capital s
 𝖲
-mathematical sans-serif capital t
+mathematical sans serif capital t
 𝖳
-mathematical sans-serif capital u
+mathematical sans serif capital u
 𝖴
-mathematical sans-serif capital v
+mathematical sans serif capital v
 𝖵
-mathematical sans-serif capital w
+mathematical sans serif capital w
 𝖶
-mathematical sans-serif capital x
+mathematical sans serif capital x
 𝖷
-mathematical sans-serif capital y
+mathematical sans serif capital y
 𝖸
-mathematical sans-serif capital z
+mathematical sans serif capital z
 𝖹
-mathematical sans-serif italic capital a
+mathematical sans serif italic capital a
 𝘈
-mathematical sans-serif italic capital b
+mathematical sans serif italic capital b
 𝘉
-mathematical sans-serif italic capital c
+mathematical sans serif italic capital c
 𝘊
-mathematical sans-serif italic capital d
+mathematical sans serif italic capital d
 𝘋
-mathematical sans-serif italic capital e
+mathematical sans serif italic capital e
 𝘌
-mathematical sans-serif italic capital f
+mathematical sans serif italic capital f
 𝘍
-mathematical sans-serif italic capital g
+mathematical sans serif italic capital g
 𝘎
-mathematical sans-serif italic capital h
+mathematical sans serif italic capital h
 𝘏
-mathematical sans-serif italic capital i
+mathematical sans serif italic capital i
 𝘐
-mathematical sans-serif italic capital j
+mathematical sans serif italic capital j
 𝘑
-mathematical sans-serif italic capital k
+mathematical sans serif italic capital k
 𝘒
-mathematical sans-serif italic capital l
+mathematical sans serif italic capital l
 𝘓
-mathematical sans-serif italic capital m
+mathematical sans serif italic capital m
 𝘔
-mathematical sans-serif italic capital n
+mathematical sans serif italic capital n
 𝘕
-mathematical sans-serif italic capital o
+mathematical sans serif italic capital o
 𝘖
-mathematical sans-serif italic capital p
+mathematical sans serif italic capital p
 𝘗
-mathematical sans-serif italic capital q
+mathematical sans serif italic capital q
 𝘘
-mathematical sans-serif italic capital r
+mathematical sans serif italic capital r
 𝘙
-mathematical sans-serif italic capital s
+mathematical sans serif italic capital s
 𝘚
-mathematical sans-serif italic capital t
+mathematical sans serif italic capital t
 𝘛
-mathematical sans-serif italic capital u
+mathematical sans serif italic capital u
 𝘜
-mathematical sans-serif italic capital v
+mathematical sans serif italic capital v
 𝘝
-mathematical sans-serif italic capital w
+mathematical sans serif italic capital w
 𝘞
-mathematical sans-serif italic capital x
+mathematical sans serif italic capital x
 𝘟
-mathematical sans-serif italic capital y
+mathematical sans serif italic capital y
 𝘠
-mathematical sans-serif italic capital z
+mathematical sans serif italic capital z
 𝘡
-mathematical sans-serif italic small a
+mathematical sans serif italic small a
 𝘢
-mathematical sans-serif italic small b
+mathematical sans serif italic small b
 𝘣
-mathematical sans-serif italic small c
+mathematical sans serif italic small c
 𝘤
-mathematical sans-serif italic small d
+mathematical sans serif italic small d
 𝘥
-mathematical sans-serif italic small e
+mathematical sans serif italic small e
 𝘦
-mathematical sans-serif italic small f
+mathematical sans serif italic small f
 𝘧
-mathematical sans-serif italic small g
+mathematical sans serif italic small g
 𝘨
-mathematical sans-serif italic small h
+mathematical sans serif italic small h
 𝘩
-mathematical sans-serif italic small i
+mathematical sans serif italic small i
 𝘪
-mathematical sans-serif italic small j
+mathematical sans serif italic small j
 𝘫
-mathematical sans-serif italic small k
+mathematical sans serif italic small k
 𝘬
-mathematical sans-serif italic small l
+mathematical sans serif italic small l
 𝘭
-mathematical sans-serif italic small m
+mathematical sans serif italic small m
 𝘮
-mathematical sans-serif italic small n
+mathematical sans serif italic small n
 𝘯
-mathematical sans-serif italic small o
+mathematical sans serif italic small o
 𝘰
-mathematical sans-serif italic small p
+mathematical sans serif italic small p
 𝘱
-mathematical sans-serif italic small q
+mathematical sans serif italic small q
 𝘲
-mathematical sans-serif italic small r
+mathematical sans serif italic small r
 𝘳
-mathematical sans-serif italic small s
+mathematical sans serif italic small s
 𝘴
-mathematical sans-serif italic small t
+mathematical sans serif italic small t
 𝘵
-mathematical sans-serif italic small u
+mathematical sans serif italic small u
 𝘶
-mathematical sans-serif italic small v
+mathematical sans serif italic small v
 𝘷
-mathematical sans-serif italic small w
+mathematical sans serif italic small w
 𝘸
-mathematical sans-serif italic small x
+mathematical sans serif italic small x
 𝘹
-mathematical sans-serif italic small y
+mathematical sans serif italic small y
 𝘺
-mathematical sans-serif italic small z
+mathematical sans serif italic small z
 𝘻
-mathematical sans-serif small a
+mathematical sans serif small a
 𝖺
-mathematical sans-serif small b
+mathematical sans serif small b
 𝖻
-mathematical sans-serif small c
+mathematical sans serif small c
 𝖼
-mathematical sans-serif small d
+mathematical sans serif small d
 𝖽
-mathematical sans-serif small e
+mathematical sans serif small e
 𝖾
-mathematical sans-serif small f
+mathematical sans serif small f
 𝖿
-mathematical sans-serif small g
+mathematical sans serif small g
 𝗀
-mathematical sans-serif small h
+mathematical sans serif small h
 𝗁
-mathematical sans-serif small i
+mathematical sans serif small i
 𝗂
-mathematical sans-serif small j
+mathematical sans serif small j
 𝗃
-mathematical sans-serif small k
+mathematical sans serif small k
 𝗄
-mathematical sans-serif small l
+mathematical sans serif small l
 𝗅
-mathematical sans-serif small m
+mathematical sans serif small m
 𝗆
-mathematical sans-serif small n
+mathematical sans serif small n
 𝗇
-mathematical sans-serif small o
+mathematical sans serif small o
 𝗈
-mathematical sans-serif small p
+mathematical sans serif small p
 𝗉
-mathematical sans-serif small q
+mathematical sans serif small q
 𝗊
-mathematical sans-serif small r
+mathematical sans serif small r
 𝗋
-mathematical sans-serif small s
+mathematical sans serif small s
 𝗌
-mathematical sans-serif small t
+mathematical sans serif small t
 𝗍
-mathematical sans-serif small u
+mathematical sans serif small u
 𝗎
-mathematical sans-serif small v
+mathematical sans serif small v
 𝗏
-mathematical sans-serif small w
+mathematical sans serif small w
 𝗐
-mathematical sans-serif small x
+mathematical sans serif small x
 𝗑
-mathematical sans-serif small y
+mathematical sans serif small y
 𝗒
-mathematical sans-serif small z
+mathematical sans serif small z
 𝗓
 mathematical script capital a
 𝒜
@@ -1488,117 +1476,81 @@ mathematical script small y
 𝓎
 mathematical script small z
 𝓏
+circle a
+Ⓐ
+circle b
+Ⓑ
+circle c
+Ⓒ
+small circle c copyright
+©
+circle d
+Ⓓ
+circle e
+Ⓔ
+circle f
+Ⓕ
+circle g
+Ⓖ
+circle h
+Ⓗ
+circle i
+Ⓘ
+circle j
+Ⓙ
+circle k
+Ⓚ
+circle l
+Ⓛ
+circle m
+Ⓜ
+small circle m
+🆭
+circle n
+Ⓝ
+circle o
+Ⓞ
+circle p
+Ⓟ
+circle q
+Ⓠ
+circle r
+Ⓡ
+small circle r
+®
+circle s
+Ⓢ
+circle t
+Ⓣ
+circle u
+Ⓤ
+circle v
+Ⓥ
+circle w
+Ⓦ
+circle x
+Ⓧ
+circle y
+Ⓨ
+circle z
+Ⓩ
 minus sign
 −
-minus-or-plus sign
+minus or plus sign
 ∓
-modifier letter capital a
-ᴬ
-modifier letter capital b
-ᴮ
-modifier letter capital d
-ᴰ
-modifier letter capital e
-ᴱ
-modifier letter capital g
-ᴳ
-modifier letter capital h
-ᴴ
-modifier letter capital i
-ᴵ
-modifier letter capital j
-ᴶ
-modifier letter capital k
-ᴷ
-modifier letter capital l
-ᴸ
-modifier letter capital m
-ᴹ
-modifier letter capital n
-ᴺ
-modifier letter capital p
-ᴾ
-modifier letter capital r
-ᴿ
-modifier letter capital t
-ᵀ
-modifier letter capital u
-ᵁ
-modifier letter capital v
-ⱽ
-modifier letter capital w
-ᵂ
-modifier letter double prime
-ʺ
-modifier letter plus sign
-˖
-modifier letter prime
-ʹ
-modifier letter raised down arrow
-ꜜ
-modifier letter raised up arrow
-ꜛ
-modifier letter small a
-ᵃ
-modifier letter small b
-ᵇ
-modifier letter small c
-ᶜ
-modifier letter small d
-ᵈ
-modifier letter small e
-ᵉ
-modifier letter small f
-ᶠ
-modifier letter small g
-ᵍ
-modifier letter small h
-ʰ
-modifier letter small j
-ʲ
-modifier letter small k
-ᵏ
-modifier letter small l
-ˡ
-modifier letter small m
-ᵐ
-modifier letter small o
-ᵒ
-modifier letter small p
-ᵖ
-modifier letter small r
-ʳ
-modifier letter small s
-ˢ
-modifier letter small t
-ᵗ
-modifier letter small theta
-ᶿ
-modifier letter small u
-ᵘ
-modifier letter small v
-ᵛ
-modifier letter small w
-ʷ
-modifier letter small x
-ˣ
-modifier letter small y
-ʸ
-modifier letter small z
-ᶻ
 mongolian ellipsis
 ᠁
-much greater-than
+much greater than >
 ≫
-much less-than
+much less than <
 ≪
 multiplication sign
 ×
 multiplication x
 ✕
-n-ary product
+n ary product
 ∏
-n-ary summation
+n ary summation
 ∑
 nabla
 ∇
@@ -1618,7 +1570,7 @@ place of interest sign
 ⌘
 planck constant
 ℎ
-plus-minus sign
+plus minus add minus
 ±
 precedes
 ≺
@@ -1642,7 +1594,7 @@ rightwards double arrow
 ⇒
 rightwards double arrow from bar
 ⤇
-rightwards triangle-headed arrow
+rightwards triangle headed arrow
 ⭢
 script capital b
 ℬ
@@ -1662,46 +1614,10 @@ script small o
 ℴ
 star operator
 ⋆
-subscript five
-𝐱₅
-subscript four
-𝐱₄
-subscript minus
-𝐱₋
-subscript one
-𝐱₁
-subscript plus sign
-𝐱₊
-subscript three
-𝐱₃
-subscript two
-𝐱₂
-subscript zero
-𝐱₀
 subset of
 ⊂
 subset of or equal to
 ⊆
-superscript four
-𝐱⁴
-superscript latin small letter i
-𝐱ⁱ
-superscript latin small letter n
-𝐱ⁿ
-superscript left parenthesis
-𝐱⁽
-superscript minus
-𝐱⁻
-superscript one
-𝐱¹
-superscript right parenthesis
-𝐱⁾
-superscript three
-𝐱³
-superscript two
-𝐱²
-superscript zero
-𝐱⁰
 superset of
 ⊃
 superset of or equal to
@@ -1722,7 +1638,7 @@ union
 ∪
 up arrowhead
 ⌃
-up down triangle-headed arrow
+up down triangle headed arrow
 ⭥
 up tack
 ⊥
@@ -1730,7 +1646,7 @@ upwards arrow
 ↑
 upwards arrow to bar
 ⤒
-upwards triangle-headed arrow
+upwards triangle headed arrow
 ⭡
 upwards white arrow
 ⇧
@@ -1744,3 +1660,203 @@ vulgar fraction one third
 ⅓
 white square
 □
+because
+∵
+therefore so
+∴
+square root sqrt
+√
+zero power 0
+⁰
+first power 1
+¹
+square quadratic second power 2
+²
+cubic third power 3
+³
+fourth power 4
+⁴
+fifth power 5
+⁵
+sixth power 6
+⁶
+seventh power 7
+⁷
+eighth power 8
+⁸
+ninth power 9
+⁹
+plus power +
+⁺
+minus power -
+⁻
+equal power =
+⁼
+left parentheses power (
+⁽
+right parentheses power )
+⁾
+parentheses power pair ()
+⁽⁾
+modifier capital a power
+ᴬ
+modifier capital b power
+ᴮ
+modifier capital d power
+ᴰ
+modifier capital e power
+ᴱ
+modifier capital g power
+ᴳ
+modifier capital h power
+ᴴ
+modifier capital i power
+ᴵ
+modifier capital j power
+ᴶ
+modifier capital k power
+ᴷ
+modifier capital l power
+ᴸ
+modifier capital m power
+ᴹ
+modifier capital n power
+ᴺ
+modifier capital p power
+ᴾ
+modifier capital r power
+ᴿ
+modifier capital t power
+ᵀ
+modifier capital u power
+ᵁ
+modifier capital v power
+ⱽ
+modifier capital w power
+ᵂ
+modifier double prime
+ʺ
+modifier prime
+ʹ
+modifier raised down arrow power
+ꜜ
+modifier raised up arrow power
+ꜛ
+modifier small theta power
+ᶿ
+modifier a power
+ᵃ
+modifier b power
+ᵇ
+modifier c power
+ᶜ
+modifier d power
+ᵈ
+modifier e power
+ᵉ
+modifier f power
+ᶠ
+modifier g power
+ᶢ
+modifier h power
+ʰ
+modifier i power
+ⁱ
+modifier j power
+ʲ
+modifier k power
+ᵏ
+modifier l power
+ˡ
+modifier m power
+ᵐ
+modifier n power
+ⁿ
+modifier o power
+ᵒ
+modifier p power
+ᵖ
+modifier r power
+ʳ
+modifier s power
+ˢ
+modifier t power
+ᵗ
+modifier u power
+ᵘ
+modifier v power
+ᵛ
+modifier w power
+ʷ
+modifier x power
+ˣ
+modifier y power
+ʸ
+modifier z power
+ᶻ
+subscript zero 0
+₀
+subscript one 1
+₁
+subscript two 2
+₂
+subscript three 3
+₃
+subscript four 4
+₄
+subscript five 5
+₅
+subscript six 6
+₆
+subscript seven 7
+₇
+subscript eight 8
+₈
+subscript nine 9
+₉
+subscript plus +
+₊
+subscript minus -
+₋
+subscript equals =
+₌
+subscript left parenthesis (
+₍
+subscript right parenthesis )
+₎
+subscript parenthesis pair ()
+₍₎
+subscript a
+ₐ
+subscript e
+ₑ
+subscript h
+ₕ
+subscript i
+ᵢ
+subscript j
+ⱼ
+subscript k
+ₖ
+subscript l
+ₗ
+subscript m
+ₘ
+subscript n
+ₙ
+subscript o
+ₒ
+subscript p
+ₚ
+subscript r
+ᵣ
+subscript s
+ₛ
+subscript t
+ₜ
+subscript u
+ᵤ
+subscript v
+ᵥ
+subscript x
+ₓ

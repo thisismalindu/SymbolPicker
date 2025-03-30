@@ -33,3 +33,4 @@ C:\C#sourceCode\SymbolPicker-fork\SymbolPicker\obj\Debug\net6.0-windows\SymbolPi
 C:\C#sourceCode\SymbolPicker-fork\SymbolPicker\obj\Debug\net6.0-windows\SymbolPicker.genruntimeconfig.cache
 C:\C#sourceCode\SymbolPicker-fork\SymbolPicker\obj\Debug\net6.0-windows\ref\SymbolPicker.dll
 C:\C#sourceCode\SymbolPicker-fork\SymbolPicker\bin\Debug\net6.0-windows\symbols.txt
+C:\C#sourceCode\SymbolPicker-fork\SymbolPicker\obj\Debug\net6.0-windows\SymbolPicker.Settings.resources
