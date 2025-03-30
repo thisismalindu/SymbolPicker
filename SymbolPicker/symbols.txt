@@ -132,17 +132,17 @@ greater than or equal to
 ≥
 greek capital letter lamda lambda
 λ
-greek capital letter omega w
-ω
-greek capital letter phi o
+greek capital letter omega ohm
+Ω
+greek capital letter phi
 φ
 greek capital letter pi
 π
 greek capital letter psi
 ψ
-greek capital letter sigma o
+greek capital letter sigma
 σ
-greek capital letter theta o
+greek capital letter theta
 θ
 greek capital letter upsilon u
 υ
